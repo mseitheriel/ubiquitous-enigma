@@ -13,7 +13,7 @@ TICKET_NUMBER=$1
 TICKET_ID=$2
 
 
-link="https://otrs/index.pl?Action=AgentTicketZoom;TicketID=$TICKET_NUMBER"
+link="https://otrs/index.pl?Action=AgentTicketZoom;TicketID=$TICKET_ID"
 
 
 PAYLOAD="payload={\"channel\": \"${SLACK_CHANNEL}\", \"username\": \"${SLACK_BOTNAME}\", \"text\": \"*Ticket*: ${TICKET_NUMBER}\n${SERVICE_MESSAGE}*Link*:${link}\"}"
