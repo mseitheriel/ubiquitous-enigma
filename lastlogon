@@ -1,2 +1,3 @@
+# Get LastLogonTime for licensed user mailboxes in Office 365
 Get-MsolUser -All | where {$.isLicensed -eq $true} | Foreach {Get-MailboxStatistics $.UserPrincipalName | Select DisplayName, LastLogonTime}
 
