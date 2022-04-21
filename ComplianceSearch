@@ -1,0 +1,11 @@
+#Create Search  
+New-ComplianceSearch -Name "NameOfQuery" -ExchangeLocation all -ContentMatchQuery subject:'NameOfSubject'
+
+#Run Search
+Start-ComplianceSearch -Identity "NameOfQuery"
+ 
+#See result
+Get-ComplianceSearch -Identity "NameoFQuery" | fl
+ 
+#Delete
+New-ComplianceSearchAction -SearchName "Outbreak" -Purge -PurgeType HardDelete
