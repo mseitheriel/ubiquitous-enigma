@@ -1,0 +1,1 @@
+Search-MailboxAuditLog -Identity "Email" -LogonTypes Owner -StartDate "September 8 2020" -EndDate "December 8 2020" -ShowDetails | Export-Csv C:\temp\Audit.csv -NoTypeInformation
