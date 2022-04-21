@@ -1,0 +1,1 @@
+Get-Mailbox -Filter { WindowsEmailAddress -like "*@domain.com" } -ResultSize Unlimited | Set-Mailbox -MaxSendSize 150MB -MaxReceiveSize 150MB
