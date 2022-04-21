@@ -1,0 +1,5 @@
+<QueryList>
+  <Query Id="0" Path="Security">
+    <Select Path="Security">* [EventData[Data[@Name='TargetUserName']='Domain\UPN ']]</Select>
+  </Query>
+</QueryList>
